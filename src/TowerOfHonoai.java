@@ -10,6 +10,7 @@ public class TowerOfHonoai {
         if(n==1){
             System.out.println("Disk 1 from tower "+from+ " To  " +to);
             return;
+
         }
         towerHanoi(n-1,from,to,aux);
         System.out.println("Disk "+n+ " from tower  "+from + " to "+ to);
