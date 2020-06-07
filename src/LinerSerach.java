@@ -1,4 +1,9 @@
 public class LinerSerach {
+    private  int []arry;
+
+    public LinerSerach( int n){
+        this.arry=new int[20];
+    }
 
     public static void main(String arg[]){
 
@@ -7,6 +12,9 @@ public class LinerSerach {
         System.out.println("liner serach with recurrsion:: "+serachRecurssion(b,0,67));
 
     }
+
+
+
 
     private static  boolean search(int[] a,int key){
 
