@@ -10,19 +10,15 @@ public class LinerSerach {
 
     private static  boolean search(int[] a,int key){
 
-
         for(int i:a){
             if(i==key) {
-
                 return true;
             }
         }
         return false;
-
     }
 
     private static boolean serachRecurssion(int a[],int left,int key){
-
         if(a[left]==key) return true;
         if(left>=a.length-1) return false;
         return serachRecurssion(a,left+1,key);
