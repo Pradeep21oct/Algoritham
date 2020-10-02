@@ -5,8 +5,8 @@ public class BalanceBrackets {
 
     public static void main(String[] args) {
 
-        String input="(a{[d]}b)";
-      System.out.println(isBalance(input));  ;
+        String input="({[]})";
+      System.out.println(isBalancev2(input));  ;
     }
 
     private static boolean isBalance(String input) {
@@ -33,5 +33,19 @@ public class BalanceBrackets {
             }
 
         return stackFixLength.isEmpty();
+    }
+
+    private static boolean isBalancev2(String in){
+        if(in==null ||in.length()%2!=0)return false;
+
+        in=in.replace(" ","");
+        int len=in.length();
+        for(int i=0;i<len;i++){
+            in=in.replace("()","");
+            in=in.replace("{}","");
+            in=in.replace("[]","");
+
+        }
+        return in.isEmpty();
     }
 }
